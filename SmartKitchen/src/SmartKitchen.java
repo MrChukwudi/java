@@ -24,6 +24,25 @@ public class SmartKitchen {
     public DishWasher getDishWasher() {
         return dishWasher;
     }
+
+
+
+
+
+    // Method to Set Kitchen State;
+    public void setKitchenState(boolean coffeeFlag, boolean fridgeFlag, boolean dishWasherFlag){
+        brewMaster.setHasWorkToDo(coffeeFlag);
+        iceBox.setHasWorkToDo(fridgeFlag);
+        dishWasher.setHasWorkToDo(dishWasherFlag);
+    }
+
+
+    // Method that just does Kitchen Work:
+    public void doKitchenWork(){
+        brewMaster.brewCoffee();
+        iceBox.orderFood();
+        dishWasher.doDishes();
+    }
 }
 
 
