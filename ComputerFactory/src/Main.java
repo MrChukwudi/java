@@ -6,5 +6,11 @@ public class Main {
 
 
         PersonalComputer thePC = new PersonalComputer("2208", "Dell", theMonitor, theCase, theMotherboard);
+
+
+
+        thePC.getMonitor().drawPixelAt(10, 20, "Red");
+        thePC.getMotherboard().loadProgram("Intelli-J");
+        thePC.getComputerCase().pressPowerButton();
     }
 }
