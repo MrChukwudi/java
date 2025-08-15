@@ -14,8 +14,15 @@ public class Main {
         kitchen.getBrewMaster().brewCoffee();
         */
 
+        /*
         kitchen.setKitchenState(true, true, false);
         kitchen.doKitchenWork();
+        */
+
+
+
+        EnhancedPlayer tim = new EnhancedPlayer(289, "Tim", "Desert Eagle");
+        System.out.println(tim.healthRemaining());
     }
 
 }
